@@ -1,0 +1,49 @@
+.header
+  z-index: 1
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+
+  width: 100%
+  +yo('padding-top', (1300px: 32px, 1920px: 44px, 2500px: 54px))
+  +yo('padding-bottom', (1300px: 32px, 1920px: 44px, 2500px: 54px))
+
+.header__logo-cover
+  z-index: -1
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+
+  width: 25vw
+  height: 100%
+
+  background: $acc
+
+.header__logo
+  +fr
+  +yo('font-size', (1300px: 24px, 1920px: 30px, 2500px: 40px))
+
+  transition: transform 1s ease
+  &:hover
+    transform: scale(1.1, 0.95)
+
+.header__user
+  overflow: hidden
+  min-width: 32px
+  width: 32px
+  height: 32px
+  margin-left: calc(#{columns(1)} - 32px)
+
+  border-radius: 50%
+
+.header__user img
+  display: block
+  max-width: 100%
+  width: 100%
+  height: 100%
+
+  
+.header__cart
+  +pl(m)

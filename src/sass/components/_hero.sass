@@ -1,0 +1,39 @@
+.hero
+  width: 75vw
+  height: 100vh
+
+  position: absolute
+  top: 0
+  right: 0
+
+  display: none !important
+
+.hero__content
+  padding-right: $unit
+  width: 50%
+  padding-left: columns(1)
+
+.hero__img
+  height: 100%
+  width: 50%
+  padding: 0
+
+.hero__title
+  +fr
+  +heading-size-2
+  line-height: 1.1
+
+  margin-bottom: 8px
+
+.hero__subtitle
+  margin-bottom: 8%
+
+.hero__text
+  opacity: 0.8
+  max-width: 90%
+  margin-bottom: 4em
+
+  @media (min-width: 1400px)
+    max-width: 80%
+  @media (min-width: 1920px)
+    max-width: 70%

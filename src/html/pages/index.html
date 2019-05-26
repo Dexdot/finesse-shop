@@ -1,0 +1,98 @@
+@include('../includes/pre-head.html')
+
+<main>
+  <aside class="aside">
+    <h2 class="aside__title t-h4">Shop</h2>
+    <nav>
+      <ul>
+        <li><button>Blog</button></li>
+        <li><button class="active">Shop</button></li>
+        <li><button>Lookbook</button></li>
+        <li><button>About</button></li>
+        <li><button>Press</button></li>
+      </ul>
+    </nav>
+
+    <button class="cta">
+      <div class="cta__img img">
+        <div
+          class="img__i"
+          style="background-image: url(img/lookbook.jpg)"
+        ></div>
+      </div>
+      <div class="cta__circle u-center">
+        <svg class="i-chevron"><use xlink:href="#i-chevron" /></svg>
+      </div>
+    </button>
+  </aside>
+
+  <section class="hero u-flex u-aic">
+    <div class="hero__img img">
+      <img src="img/lookbook.jpg" alt="New Collection" class="img__i" />
+    </div>
+    <div class="hero__content">
+      <h1 class="hero__title">Prêt-à-Porter Meets Swim</h1>
+      <p class="hero__subtitle">"BEATRICE" — SS19 Collection</p>
+      <p class="hero__text">
+        FINESSE is a luxury swim and resort label reflecting a sense of iconic
+        sophistication and elegance, focusing on high quality materials and the
+        perfect fit.
+      </p>
+      <button class="btn" data-text="Shop">
+        <span>Shop</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <ul>
+      @for (var i = 0; i < list.length; i++) {
+      <li>
+        <div class="catalog-item u-center t-tac" data-id="`+list[i].id+`">
+          <div class="img">
+            <img
+              src="`+list[i].image.main+`"
+              alt="`+list[i].name+`"
+              class="img__i"
+            />
+          </div>
+          <p class="catalog-item__name t-text-ttu">`+list[i].name+`</p>
+          <p class="catalog-item__price t-text-ttu">$`+list[i].price+`</p>
+        </div>
+      </li>
+      }
+    </ul>
+  </section>
+
+  <section class="product">
+    <div class="product__cover"></div>
+
+    <div class="product__container u-flex u-aic">
+      <div class="product__slider">
+        <img
+          class="product__img"
+          src="/img/shop/bardot-maillot-navy/f.png"
+          alt="Front"
+        />
+      </div>
+
+      <div class="product__content">
+        <h2 class="t-h3 product__title">Bardot Maillot Navy</h2>
+        <b class="product__price t-h5">$380</b>
+        <p class="product__text">
+          French corsetry and vintage silhouettes inspire our Bardot strapless
+          maillot. Our signature pleating is carefully draped around the top
+          half and underwire and boning are incorporated to maintain shape and
+          support. The rich Navy color gives a highlighted sophistication to
+          this vintage one-piece.
+        </p>
+        <button class="btn" data-text="Buy">
+          <span>Buy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- footer -->
+@include('../includes/footer.html')

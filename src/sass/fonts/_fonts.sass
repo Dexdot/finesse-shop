@@ -1,0 +1,33 @@
+@font-face
+  font-family: 'Plain'
+  src: url('../fonts/Plain-Regular.woff2') format('woff2')
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+
+@font-face
+  font-family: 'Plain'
+  src: url('../fonts/Plain-Medium.woff2') format('woff2')
+  font-style: normal
+  font-weight: 500
+  font-display: swap
+
+@font-face
+  font-family: 'FreightBigProBook'
+  src: url('../fonts/FreightBigProBook-Regular.woff2') format('woff2')
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+
+  
+=pl($weight: r)
+  @if $weight == r
+    font-family: 'Plain', sans-serif
+    font-weight: 400
+  @if $weight == m
+    font-family: 'Plain', sans-serif
+    font-weight: 500
+  
+=fr
+  font-family: 'FreightBigProBook', sans-serif
+  font-weight: 400

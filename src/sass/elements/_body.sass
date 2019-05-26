@@ -1,0 +1,14 @@
+body
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  +scrollbar
+  padding-top: var(--header-h)
+  
+  +pl(r)
+  +base-text
+  line-height: $base-lh
+  color: $base-text-color
+
+html.no-scroll body
+  overflow: hidden

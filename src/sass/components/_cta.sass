@@ -1,0 +1,41 @@
+.cta
+  margin-top: auto
+  width: 100%
+
+  position: relative
+
+.cta:hover
+  .img__i
+    transform: scale(1.2) translate(10%, 0)
+  .cta__circle
+    opacity: 0.8
+
+.cta__img
+  overflow: hidden
+  width: calc(100% - 24px)
+
+.cta__img .img__i
+  background-position: center top
+  transition: 1.2s ease
+
+.cta__circle
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translate(0, -50%)
+
+  min-width: 48px
+  width: 48px
+  height: 48px
+
+  border-radius: 50%
+  background: $acc
+  transition: 0.25s ease
+
+  @media (min-width: 1920px)
+    min-width: 56px
+    width: 56px
+    height: 56px
+   
+.cta__circle .i-chevron
+  transform: rotate(-90deg)

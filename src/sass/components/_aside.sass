@@ -1,0 +1,30 @@
+.aside
+  display: flex
+  flex-direction: column
+
+  width: 25vw
+  padding-top: calc(var(--header-h) + 4%)
+  padding-left: $unit
+  padding-bottom: 4%
+
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+
+.aside__title
+  line-height: 1
+  padding-bottom: 0.4em
+  +yo('margin-bottom', (1300px: 40px, 1920px: 56px, 2500px: 64px))
+
+.aside nav
+  margin-bottom: 40px
+
+.aside nav li:not(:last-child)
+  margin-bottom: 0.5em
+
+.aside nav button
+  transition: opacity 0.4s ease
+
+.aside nav button.active
+  opacity: 0.25
