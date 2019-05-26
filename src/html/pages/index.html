@@ -67,17 +67,43 @@
   <section class="product">
     <div class="product__cover"></div>
 
-    <div class="product__container u-flex u-aic">
+    <div class="product__container js-slider u-flex u-aic">
+      <nav class="product__nav">
+        <ul class="u-flex u-flex-col">
+          <li>
+            <button class="u-center js-prev">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+          <li>
+            <button class="u-center js-next">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
       <div class="product__slider">
-        <img
-          class="product__img"
-          src="/img/shop/bardot-maillot-navy/f.png"
-          alt="Front"
-        />
+        <ul class="product__images">
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/bardot-maillot-navy/f.png"
+              alt="Front"
+            />
+          </li>
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/bardot-maillot-navy/b.png"
+              alt="Front"
+            />
+          </li>
+        </ul>
       </div>
 
       <div class="product__content">
-        <h2 class="t-h3 product__title">Bardot Maillot Navy</h2>
+        <h2 class="product__title">Bardot Maillot Navy</h2>
         <b class="product__price t-h5">$380</b>
         <p class="product__text">
           French corsetry and vintage silhouettes inspire our Bardot strapless

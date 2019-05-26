@@ -6,40 +6,84 @@
   top: 0
   right: 0
 
+
+// Cover
 .product__cover
-  z-index: -1
   position: absolute
   top: 0
   right: 0
-  height: 100vh
 
-  width: 50vw
-  background: $acc
+  height: 100vh
+  width: 75vw
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 50vw
+    height: 100vh
+    background: $acc
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: 50vw
+
+    width: 25vw
+    height: 100vh
+    background: #fff
+
 
 .product__img
-  display: block
   max-width: 100%
   width: 70%
   height: auto
-  margin-right: 1.8vw
 
+  position: absolute
+  top: 50%
+  right: 1.8vw
+  transform: translate(0, 35%)
+
+  display: none
+  &.visible
+    display: block
+
+.product__images li:nth-child(1) .product__img
+  transform: translate(0, -50%)
+
+
+// Container
 .product__container
+  position: relative
+
   width: 100%
   height: 100%
 
+
+// Slider
 .product__slider
   display: flex
   flex-direction: column
   align-items: flex-end
   width: 55%
+  height: 100vh
+  overflow: hidden
 
+  position: relative
+
+
+// Content
 .product__content
   padding-right: calc(#{$unit} + #{columns(1)})
   width: 45%
 
 .product__title
-  line-height: 1.1
-  margin-bottom: 0.2em
+  +heading-size-2
+  +fr
+  line-height: 1
+  margin-bottom: 0.3em
 
 .product__price
   display: block
@@ -52,5 +96,29 @@
   @media (min-width: 2000px)
     max-width: 70%
 
+
+// Button
 .product .btn::before
   background: $acc
+
+
+// Nav
+.product__nav
+  z-index: 1
+  position: absolute
+  top: 50%
+  left: columns(1)
+  transform: translate(0, -50%)
+
+.product__nav li:not(:last-child)
+  margin-bottom: 16px
+
+.product__nav li:nth-child(1)
+  transform: rotate(-90deg)
+  
+.product__nav li:nth-child(2)
+  transform: rotate(90deg)
+
+.product__nav button
+  width: 24px
+  height: 24px
