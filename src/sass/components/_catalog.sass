@@ -27,5 +27,35 @@
 .catalog-item__name.t-text-ttu 
   font-size: 11px
 
+.catalog-item__price:first-child
+  +pl(r)
+  color: #fff
+  background: $black
+  transform: translateX(-120%)
+  padding: 0 2px
+  
+.catalog-item__price:last-child
+  transform: translateX(-50%)
+
 .catalog-item__price
-  opacity: 0.6
+  color: rgba($black, 0.6)
+  transition: 0.25s ease-in-out
+
+.catalog-item img
+  transition: 0.65s ease
+
+.catalog-item:hover
+  img
+    transform: scale(1.1)
+  .catalog-item__price:first-child
+    transform: translateX(50%)
+  .catalog-item__price:last-child
+    transform: translateX(120%)
+
+
+
+
+/* CATALOG ANIMATION */
+.catalog > ul li
+  opacity: 0
+  transform: translateY(64px)

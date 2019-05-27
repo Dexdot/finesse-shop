@@ -12,4 +12,5 @@ var msgStyles = [
 window.console.log.apply(console, msgStyles);
 
 import '@/init/css-props';
+import '@/init/router';
 import '@/init/slider';

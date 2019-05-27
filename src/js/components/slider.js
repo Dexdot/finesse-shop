@@ -20,23 +20,25 @@ export default class Slider {
 
   setup() {
     this.clone();
-    show($.qs('.product__images li:nth-child(1) img'), this.DOM.el);
-    show($.qs('.product__images li:nth-child(2) img'), this.DOM.el);
+    show($.qs('.product__images li:nth-child(1) img', this.DOM.el));
+    show($.qs('.product__images li:nth-child(2) img', this.DOM.el));
 
     this.initEvents();
   }
 
   initEvents() {
     $.qs('.js-prev', this.DOM.el).addEventListener('click', () => {
-      this.prev();
+      if (!this.DOM.el.classList.contains('hidden')) this.prev();
     });
     $.qs('.js-next', this.DOM.el).addEventListener('click', () => {
-      this.next();
+      if (!this.DOM.el.classList.contains('hidden')) this.next();
     });
 
     const indicator = new WheelIndicator({
       elem: $.qs('body'),
       callback: ({ direction }) => {
+        if (this.DOM.el.classList.contains('hidden')) return false;
+
         if (direction === 'down') this.next();
         if (direction === 'up') this.prev();
       }

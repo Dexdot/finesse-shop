@@ -11,9 +11,13 @@
   width: 50%
   padding-left: columns(1)
 
-.hero__img
+.hero__img-wrap
   height: 100%
   width: 50%
+
+.hero__img
+  height: 100%
+  width: 100%
   padding: 0
 
 .hero__title
@@ -35,3 +39,29 @@
     max-width: 80%
   @media (min-width: 1920px)
     max-width: 70%
+
+
+/* HERO ANIMATION */
+.hero-char,
+.hero-word
+  will-change: opacity, transform
+
+.hero-char
+  opacity: 0
+  transform: translateY(30%)
+
+.hero-word
+  opacity: 0
+
+
+.hero .btn
+  opacity: 0
+  transform: translateY(30%)
+
+.hero__img
+  opacity: 0
+
+.hero__img img
+  transform-origin: 50% 0%
+  transform: scale(1.3)
+

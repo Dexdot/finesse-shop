@@ -113,12 +113,38 @@
 .product__nav li:not(:last-child)
   margin-bottom: 16px
 
+.product__nav li
+  transition: transform 0.45s ease-in-out
+
 .product__nav li:nth-child(1)
   transform: rotate(-90deg)
+
+.product__nav li:nth-child(1):hover
+  transform: scaleY(1.2) rotate(-90deg)
   
 .product__nav li:nth-child(2)
   transform: rotate(90deg)
+  
+.product__nav li:nth-child(2):hover
+  transform: scaleY(1.2) rotate(90deg)
 
 .product__nav button
   width: 24px
   height: 24px
+
+
+
+/* PRODUCT ANIMATION */
+.product__cover
+  transform-origin: 50% 75%
+  transform: scale(1)
+
+.product__nav
+  transform: scale(0)
+
+.product__slider,
+.product__content
+  opacity: 0
+  transform: translateY(64px)
+
+

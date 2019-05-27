@@ -79,10 +79,10 @@
 <header class="header container u-flex u-aic">
   <div class="header__logo-cover"></div>
 
-  <button class="header__logo">FINESSE</button>
+  <button class="header__logo js-hero">FINESSE</button>
   <div class="u-mla u-flex u-aic">
     <span class="header__cart">Cart — 2</span>
-    <button class="header__user u-center">
+    <button class="header__user u-center js-catalog">
       <img class="u-ocv" src="img/av.jpg" alt="Avatar" />
     </button>
   </div>
@@ -103,7 +103,7 @@
       </ul>
     </nav>
 
-    <button class="cta">
+    <button class="cta js-hero">
       <div class="cta__img img">
         <div
           class="img__i"
@@ -116,30 +116,32 @@
     </button>
   </aside>
 
-  <section class="hero u-flex u-aic">
-    <div class="hero__img img">
-      <img src="img/lookbook.jpg" alt="New Collection" class="img__i" />
+  <section class="hero u-flex u-aic hidden">
+    <div class="hero__img-wrap u-ovh">
+      <div class="hero__img img u-ovh">
+        <img src="img/lookbook.jpg" alt="New Collection" class="img__i" />
+      </div>
     </div>
     <div class="hero__content">
       <h1 class="hero__title">Prêt-à-Porter Meets Swim</h1>
-      <p class="hero__subtitle">"BEATRICE" — SS19 Collection</p>
+      <p class="hero__subtitle hero-word">"BEATRICE" — SS19 Collection</p>
       <p class="hero__text">
         FINESSE is a luxury swim and resort label reflecting a sense of iconic
         sophistication and elegance, focusing on high quality materials and the
         perfect fit.
       </p>
-      <button class="btn" data-text="Shop">
+      <button class="btn js-catalog" data-text="Shop">
         <span>Shop</span>
       </button>
     </div>
   </section>
 
-  <section class="catalog">
+  <section class="catalog hidden">
     <ul>
       
       <li>
-        <div class="catalog-item u-center t-tac" data-id="amour-ivory">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="/img/shop/amour-ivory/main.jpg"
               alt="Amour Ivory"
@@ -147,13 +149,16 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">Amour Ivory</p>
-          <p class="catalog-item__price t-text-ttu">$165</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$165</p>
+            <p class="catalog-item__price t-text-ttu">$165</p>
+          </div>
         </div>
       </li>
       
       <li>
-        <div class="catalog-item u-center t-tac" data-id="amour-rouge">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="/img/shop/amour-rouge/main.jpg"
               alt="Amour Rouge"
@@ -161,13 +166,16 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">Amour Rouge</p>
-          <p class="catalog-item__price t-text-ttu">$165</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$165</p>
+            <p class="catalog-item__price t-text-ttu">$165</p>
+          </div>
         </div>
       </li>
       
       <li>
-        <div class="catalog-item u-center t-tac" data-id="ballet-beige">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="/img/shop/ballet-beige/main.jpg"
               alt="Ballet Beige"
@@ -175,13 +183,16 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">Ballet Beige</p>
-          <p class="catalog-item__price t-text-ttu">$400</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$400</p>
+            <p class="catalog-item__price t-text-ttu">$400</p>
+          </div>
         </div>
       </li>
       
       <li>
-        <div class="catalog-item u-center t-tac" data-id="ballet-maillot-black">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="/img/shop/ballet-maillot-black/main.jpg"
               alt="Ballet Maillot Black"
@@ -189,13 +200,16 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">Ballet Maillot Black</p>
-          <p class="catalog-item__price t-text-ttu">$400</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$400</p>
+            <p class="catalog-item__price t-text-ttu">$400</p>
+          </div>
         </div>
       </li>
       
       <li>
-        <div class="catalog-item u-center t-tac" data-id="bardot-maillot-navy">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="/img/shop/bardot-maillot-navy/main.jpg"
               alt="Bardot Maillot Navy"
@@ -203,13 +217,16 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">Bardot Maillot Navy</p>
-          <p class="catalog-item__price t-text-ttu">$380</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$380</p>
+            <p class="catalog-item__price t-text-ttu">$380</p>
+          </div>
         </div>
       </li>
       
       <li>
-        <div class="catalog-item u-center t-tac" data-id="colette-maillot-gold">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="/img/shop/colette-maillot-gold/main.jpg"
               alt="Colette Maillot Gold"
@@ -217,13 +234,16 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">Colette Maillot Gold</p>
-          <p class="catalog-item__price t-text-ttu">$320</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$320</p>
+            <p class="catalog-item__price t-text-ttu">$320</p>
+          </div>
         </div>
       </li>
       
       <li>
-        <div class="catalog-item u-center t-tac" data-id="dali-bralette-black">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="/img/shop/dali-bralette-black/main.jpg"
               alt="Dali Bralette Black"
@@ -231,13 +251,16 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">Dali Bralette Black</p>
-          <p class="catalog-item__price t-text-ttu">$130</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$130</p>
+            <p class="catalog-item__price t-text-ttu">$130</p>
+          </div>
         </div>
       </li>
       
       <li>
-        <div class="catalog-item u-center t-tac" data-id="dali-bralette-navy">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="/img/shop/dali-bralette-navy/main.jpg"
               alt="Dali Bralette Navy"
@@ -245,17 +268,225 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">Dali Bralette Navy</p>
-          <p class="catalog-item__price t-text-ttu">$130</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$130</p>
+            <p class="catalog-item__price t-text-ttu">$130</p>
+          </div>
         </div>
       </li>
       
     </ul>
   </section>
 
-  <section class="product">
+  
+  <section class="product js-slider hidden">
     <div class="product__cover"></div>
 
-    <div class="product__container js-slider u-flex u-aic">
+    <div class="product__container u-flex u-aic">
+      <nav class="product__nav">
+        <ul class="u-flex u-flex-col">
+          <li>
+            <button class="u-center js-prev">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+          <li>
+            <button class="u-center js-next">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="product__slider">
+        <ul class="product__images">
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/amour-ivory/f.png"
+              alt="Front"
+            />
+          </li>
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/amour-ivory/b.png"
+              alt="Front"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__content">
+        <h2 class="product__title">Amour Ivory</h2>
+        <b class="product__price t-h5">$165</b>
+        <p class="product__text">
+          Introducing the Amour bandeau in Ivory! The two-tone composition with our signature hand-pleated mesh adds a touch of architectural modernity to a timeless and chic silhouette. Our double self-lining and clean finish makes for comfort, mobility and the perfect fit. *The model is 5'8" and is wearing a size XS
+        </p>
+        <button class="btn js-catalog" data-text="Buy">
+          <span>Buy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="product js-slider hidden">
+    <div class="product__cover"></div>
+
+    <div class="product__container u-flex u-aic">
+      <nav class="product__nav">
+        <ul class="u-flex u-flex-col">
+          <li>
+            <button class="u-center js-prev">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+          <li>
+            <button class="u-center js-next">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="product__slider">
+        <ul class="product__images">
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/amour-rouge/f.png"
+              alt="Front"
+            />
+          </li>
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/amour-rouge/b.png"
+              alt="Front"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__content">
+        <h2 class="product__title">Amour Rouge</h2>
+        <b class="product__price t-h5">$165</b>
+        <p class="product__text">
+          Our Amour two-piece is the perfect bandeau with boning for extra support, a detachable halter, and our signature two tone hand-pleated mesh. Double self-lining and clean finish seams makes for comfort, mobility and a perfect fit. *The model is 5'8" and wearing a size XS.
+        </p>
+        <button class="btn js-catalog" data-text="Buy">
+          <span>Buy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="product js-slider hidden">
+    <div class="product__cover"></div>
+
+    <div class="product__container u-flex u-aic">
+      <nav class="product__nav">
+        <ul class="u-flex u-flex-col">
+          <li>
+            <button class="u-center js-prev">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+          <li>
+            <button class="u-center js-next">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="product__slider">
+        <ul class="product__images">
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/ballet-beige/f.png"
+              alt="Front"
+            />
+          </li>
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/ballet-beige/b.png"
+              alt="Front"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__content">
+        <h2 class="product__title">Ballet Beige</h2>
+        <b class="product__price t-h5">$400</b>
+        <p class="product__text">
+          The Ballet maillot offers a Parisian sentiment, with its Peter-Pan collar and French cufflinks. The power mesh sleeves protect from UV rays and help to create our take on the full-coverage ‘body suit’. The invisible zipper in the back allows for easy dressing and our keyhole detail is the added touch we love!
+        </p>
+        <button class="btn js-catalog" data-text="Buy">
+          <span>Buy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="product js-slider hidden">
+    <div class="product__cover"></div>
+
+    <div class="product__container u-flex u-aic">
+      <nav class="product__nav">
+        <ul class="u-flex u-flex-col">
+          <li>
+            <button class="u-center js-prev">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+          <li>
+            <button class="u-center js-next">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="product__slider">
+        <ul class="product__images">
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/ballet-maillot-black/f.png"
+              alt="Front"
+            />
+          </li>
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/ballet-maillot-black/b.png"
+              alt="Front"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__content">
+        <h2 class="product__title">Ballet Maillot Black</h2>
+        <b class="product__price t-h5">$400</b>
+        <p class="product__text">
+          The Ballet maillot is our ode to “Le Sentiment Parisien”. The all black edition with Ivory accents is our favorite combination yet, allowing the chic Peter-Pan collar and French cufflinks to stand out in this perfectly monochromatic medley. The power mesh sleeves protect from UV rays and help create our take on the full-coverage ‘body suit’.
+        </p>
+        <button class="btn js-catalog" data-text="Buy">
+          <span>Buy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="product js-slider hidden">
+    <div class="product__cover"></div>
+
+    <div class="product__container u-flex u-aic">
       <nav class="product__nav">
         <ul class="u-flex u-flex-col">
           <li>
@@ -294,18 +525,168 @@
         <h2 class="product__title">Bardot Maillot Navy</h2>
         <b class="product__price t-h5">$380</b>
         <p class="product__text">
-          French corsetry and vintage silhouettes inspire our Bardot strapless
-          maillot. Our signature pleating is carefully draped around the top
-          half and underwire and boning are incorporated to maintain shape and
-          support. The rich Navy color gives a highlighted sophistication to
-          this vintage one-piece.
+          French corsetry and vintage silhouettes inspire our Bardot strapless maillot. Our signature pleating is carefully draped around the top half and underwire and boning are incorporated to maintain shape and support. The rich Navy color gives a highlighted sophistication to this vintage one-piece.
         </p>
-        <button class="btn" data-text="Buy">
+        <button class="btn js-catalog" data-text="Buy">
           <span>Buy</span>
         </button>
       </div>
     </div>
   </section>
+  
+  <section class="product js-slider hidden">
+    <div class="product__cover"></div>
+
+    <div class="product__container u-flex u-aic">
+      <nav class="product__nav">
+        <ul class="u-flex u-flex-col">
+          <li>
+            <button class="u-center js-prev">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+          <li>
+            <button class="u-center js-next">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="product__slider">
+        <ul class="product__images">
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/colette-maillot-gold/f.png"
+              alt="Front"
+            />
+          </li>
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/colette-maillot-gold/b.png"
+              alt="Front"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__content">
+        <h2 class="product__title">Colette Maillot Gold</h2>
+        <b class="product__price t-h5">$320</b>
+        <p class="product__text">
+          For a day-to-evening body suit, we created the Colette maillot. With a collar that can be popped up or laid flat, this signature suit embodies a poolside aesthetic that can easily transition into evening. Pair it with a chic, high-waist pant and our sleek deep V silhouette adds a touch of sensuality to an already sophisticated outfit.
+        </p>
+        <button class="btn js-catalog" data-text="Buy">
+          <span>Buy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="product js-slider hidden">
+    <div class="product__cover"></div>
+
+    <div class="product__container u-flex u-aic">
+      <nav class="product__nav">
+        <ul class="u-flex u-flex-col">
+          <li>
+            <button class="u-center js-prev">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+          <li>
+            <button class="u-center js-next">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="product__slider">
+        <ul class="product__images">
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/dali-bralette-black/f.png"
+              alt="Front"
+            />
+          </li>
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/dali-bralette-black/b.png"
+              alt="Front"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__content">
+        <h2 class="product__title">Dali Bralette Black</h2>
+        <b class="product__price t-h5">$130</b>
+        <p class="product__text">
+          The Dalì bralette is the epitome of a classic bikini. In honor of our effortlessly chic icon, Jane Birkin, this two-piece embraces the French aesthetic of less-is-more. The top band provides plenty of comfort and support, while the triangle doesn’t overwhelm with too much fabric. It’s pretty much perfect. Just like Jane.
+        </p>
+        <button class="btn js-catalog" data-text="Buy">
+          <span>Buy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <section class="product js-slider hidden">
+    <div class="product__cover"></div>
+
+    <div class="product__container u-flex u-aic">
+      <nav class="product__nav">
+        <ul class="u-flex u-flex-col">
+          <li>
+            <button class="u-center js-prev">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+          <li>
+            <button class="u-center js-next">
+              <svg class="i-arrow"><use xlink:href="#i-arrow" /></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="product__slider">
+        <ul class="product__images">
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/dali-bralette-navy/f.png"
+              alt="Front"
+            />
+          </li>
+          <li>
+            <img
+              class="product__img"
+              src="/img/shop/dali-bralette-navy/b.png"
+              alt="Front"
+            />
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__content">
+        <h2 class="product__title">Dali Bralette Navy</h2>
+        <b class="product__price t-h5">$130</b>
+        <p class="product__text">
+          The Dalì bralette is the epitome of a classic bikini. In honor of our effortlessly chic philosophy, this two-piece bralette embraces the French aesthetic of “less-is-more.” The new Navy edition is the perfect combination of playful and timeless. The top band provides plenty of comfort and support, while the triangle doesn’t overwhelm with too much fabric.
+        </p>
+        <button class="btn js-catalog" data-text="Buy">
+          <span>Buy</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
 </main>
 
 <!-- footer -->

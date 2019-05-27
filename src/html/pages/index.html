@@ -13,7 +13,7 @@
       </ul>
     </nav>
 
-    <button class="cta">
+    <button class="cta js-hero">
       <div class="cta__img img">
         <div
           class="img__i"
@@ -26,30 +26,32 @@
     </button>
   </aside>
 
-  <section class="hero u-flex u-aic">
-    <div class="hero__img img">
-      <img src="img/lookbook.jpg" alt="New Collection" class="img__i" />
+  <section class="hero u-flex u-aic hidden">
+    <div class="hero__img-wrap u-ovh">
+      <div class="hero__img img u-ovh">
+        <img src="img/lookbook.jpg" alt="New Collection" class="img__i" />
+      </div>
     </div>
     <div class="hero__content">
       <h1 class="hero__title">Prêt-à-Porter Meets Swim</h1>
-      <p class="hero__subtitle">"BEATRICE" — SS19 Collection</p>
+      <p class="hero__subtitle hero-word">"BEATRICE" — SS19 Collection</p>
       <p class="hero__text">
         FINESSE is a luxury swim and resort label reflecting a sense of iconic
         sophistication and elegance, focusing on high quality materials and the
         perfect fit.
       </p>
-      <button class="btn" data-text="Shop">
+      <button class="btn js-catalog" data-text="Shop">
         <span>Shop</span>
       </button>
     </div>
   </section>
 
-  <section class="catalog">
+  <section class="catalog hidden">
     <ul>
       @for (var i = 0; i < list.length; i++) {
       <li>
-        <div class="catalog-item u-center t-tac" data-id="`+list[i].id+`">
-          <div class="img">
+        <div class="catalog-item u-center t-tac js-product">
+          <div class="img u-ovh">
             <img
               src="`+list[i].image.main+`"
               alt="`+list[i].name+`"
@@ -57,17 +59,21 @@
             />
           </div>
           <p class="catalog-item__name t-text-ttu">`+list[i].name+`</p>
-          <p class="catalog-item__price t-text-ttu">$`+list[i].price+`</p>
+          <div class="u-ovh u-flex u-aic">
+            <p class="catalog-item__price t-text-ttu">$`+list[i].price+`</p>
+            <p class="catalog-item__price t-text-ttu">$`+list[i].price+`</p>
+          </div>
         </div>
       </li>
       }
     </ul>
   </section>
 
-  <section class="product">
+  @for (var i = 0; i < list.length; i++) {
+  <section class="product js-slider hidden">
     <div class="product__cover"></div>
 
-    <div class="product__container js-slider u-flex u-aic">
+    <div class="product__container u-flex u-aic">
       <nav class="product__nav">
         <ul class="u-flex u-flex-col">
           <li>
@@ -88,14 +94,14 @@
           <li>
             <img
               class="product__img"
-              src="/img/shop/bardot-maillot-navy/f.png"
+              src="`+list[i].image.front+`"
               alt="Front"
             />
           </li>
           <li>
             <img
               class="product__img"
-              src="/img/shop/bardot-maillot-navy/b.png"
+              src="`+list[i].image.back+`"
               alt="Front"
             />
           </li>
@@ -103,21 +109,18 @@
       </div>
 
       <div class="product__content">
-        <h2 class="product__title">Bardot Maillot Navy</h2>
-        <b class="product__price t-h5">$380</b>
+        <h2 class="product__title">`+list[i].name+`</h2>
+        <b class="product__price t-h5">$`+list[i].price+`</b>
         <p class="product__text">
-          French corsetry and vintage silhouettes inspire our Bardot strapless
-          maillot. Our signature pleating is carefully draped around the top
-          half and underwire and boning are incorporated to maintain shape and
-          support. The rich Navy color gives a highlighted sophistication to
-          this vintage one-piece.
+          `+list[i].text+`
         </p>
-        <button class="btn" data-text="Buy">
+        <button class="btn js-catalog" data-text="Buy">
           <span>Buy</span>
         </button>
       </div>
     </div>
   </section>
+  }
 </main>
 
 <!-- footer -->

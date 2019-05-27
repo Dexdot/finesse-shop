@@ -48,6 +48,9 @@
   },
   "dependencies": {
     "animejs": "^3.0.1",
+    "inobounce": "^0.1.6",
+    "raf-engine": "^0.3.0",
+    "virtual-scroll": "^1.4.0",
     "wheel-indicator": "^1.2.1"
   }
 }
